@@ -182,10 +182,10 @@ AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY', '')
 AWS_STORAGE_BUCKET_NAME = 'usepointmix'
 AWS_S3_CUSTOM_DOMAIN = 's3.amazonaws.com/%s' % AWS_STORAGE_BUCKET_NAME
 
-STATICFILES_STORAGE = 'gettingstarted.s3util.StaticStorage'
+STATICFILES_STORAGE = 'usepointmix.s3util.StaticStorage'
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 
-DEFAULT_FILE_STORAGE = 'gettingstarted.s3util.MediaStorage'
+DEFAULT_FILE_STORAGE = 'usepointmix.s3util.MediaStorage'
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
 AWS_HEADERS = {
