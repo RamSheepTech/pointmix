@@ -16,7 +16,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = os.getenv('SECRET_KEY', '123')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -141,7 +141,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 EMAIL_HOST = ''
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
-DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
+DEFAULT_FROM_EMAIL = 'carlos@usepointmix.com.br'
 
 # auth
 LOGIN_URL = 'login'
@@ -177,8 +177,8 @@ MEDIAFILES_LOCATION = 'media'
 AWS_S3_SECURE_URLS = True
 AWS_QUERYSTRING_AUTH = False
 AWS_PRELOAD_METADATA = True
-AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID', 'Confirmar151210')
-AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY', 'Confirmar151210')
+AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID', '')
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY', '')
 AWS_STORAGE_BUCKET_NAME = 'usepointmix'
 AWS_S3_CUSTOM_DOMAIN = 's3.amazonaws.com/%s' % AWS_STORAGE_BUCKET_NAME
 
